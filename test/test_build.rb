@@ -1,0 +1,5 @@
+require_relative 'hi_by_build'
+require_relative 'reverse_case_build'
+require_relative 'dictionary_string_build'
+require_relative 'continuous_subarray_build'
+require_relative 'triangle_path_build'
