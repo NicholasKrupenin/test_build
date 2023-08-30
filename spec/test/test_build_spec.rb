@@ -19,7 +19,7 @@ RSpec.describe 'testing buid' do
   end
 
   describe '#dictionary_string' do
-    let(:test_dictionary) { ['john', 'Doe', 'Search'] }
+    let(:test_dictionary) { ['John', 'Doe', 'Search'] }
     let(:test_string) { 'JohnDoe' }
     let(:test_string_false) { 'JojDoz' }
 
