@@ -1,6 +1,5 @@
 #th-x Kadane
 def sub_array(arg)
-
   start_index = 0
   end_index = 0
   temp_start_index = 0
@@ -20,7 +19,6 @@ def sub_array(arg)
       start_index = temp_start_index
       end_index = index
     end
-
   end
   arg[start_index..end_index]
 end

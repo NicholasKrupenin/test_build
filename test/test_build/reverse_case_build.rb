@@ -1,3 +1,3 @@
 def reverse_case(arg)
- arg.swapcase!
+  arg.swapcase!
 end

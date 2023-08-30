@@ -1,27 +1,27 @@
-require_relative '../../test/test_build'
+require 'require_all'
+require_rel '../../test/test_build'
 
 RSpec.describe 'testing buid' do
-
   describe '#hi_by' do
     let(:test_arr) { [1, 2, 3, 4, 5, 10, 15] }
 
     it 'transform number to chars' do
-      expect(hi_by(test_arr)).to eq "12Hi4ByByHiBy"
+      expect(hi_by(test_arr)).to eq '12Hi4ByByHiBy'
     end
-  end  
+  end
 
   describe '#reverse_case' do
-    let(:test_string) { "JohnDoe" }
+    let(:test_string) { 'JohnDoe' }
 
     it 'transform case' do
-      expect(reverse_case(test_string)).to eq "jOHNdOE"
+      expect(reverse_case(test_string)).to eq 'jOHNdOE'
     end
   end
 
   describe '#dictionary_string' do
-    let(:test_dictionary) { ["john", "Doe", "Search"] }
-    let(:test_string) { "JohnDoe" }
-    let(:test_string_false) { "JojDoz" }
+    let(:test_dictionary) { ['john', 'Doe', 'Search'] }
+    let(:test_string) { 'JohnDoe' }
+    let(:test_string_false) { 'JojDoz' }
 
     it 'word parse' do
       expect(dictionary_string?(test_string, test_dictionary)).to be_truthy
@@ -41,7 +41,7 @@ RSpec.describe 'testing buid' do
   end
 
   describe '#triangle_path' do
-    let(:test_triangle) { [[2], [3,4], [6,5,7], [4,1,8,3]] }
+    let(:test_triangle) { [[2], [3, 4], [6, 5, 7], [4, 1, 8, 3]] }
 
     it 'search min path' do
       expect(triangle_path(test_triangle)).to match_array [2, 3, 5, 1]
